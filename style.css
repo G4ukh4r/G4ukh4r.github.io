@@ -71,17 +71,40 @@ header {
 }
 .card{
     width: 255px;
-
+    border: 1px solid #0B1919;
 }
 .card_background{
     background-color: #0B1919;
     height: 180px;
     align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card p {
+    color: #899D9D;
+    height: 168px;
+}
+.card h3{
+    font-family: 'Cormorant', serif;
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 .btn{
     border: 1px solid #BAE249;
     color: #BAE249;
     background-color: #1D2F30;
     padding: 10.5px 28.5px;
+    margin-bottom: 24px;
+}
+.card > p, h3, button{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+.cards {
+    margin-bottom: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
