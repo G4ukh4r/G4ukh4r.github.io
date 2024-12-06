@@ -80,6 +80,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .card p {
     color: #899D9D;
@@ -107,4 +108,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
+.number{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
