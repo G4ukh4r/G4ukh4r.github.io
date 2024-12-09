@@ -113,3 +113,124 @@ header {
     top: 16px;
     left: 16px;
 }
+.slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center center;
+    font-size: 24px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.slider h3{
+    margin: 0;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+}
+.heading{
+    font-family: 'Cormorant', serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+}
+.artefacts_background{
+    width: 825px;
+    height: 493px;
+    background-color: #0B1919;
+    position: relative;
+}
+.new_artefacts{
+    margin-bottom: 60px;
+    display: flex;
+    gap: 30px;
+}
+.artefact{
+    position: absolute;
+}
+.artefact.moss1{
+    top: 16px;
+    left: 16px;
+}
+.artefact.moss2{
+    top: 16px;
+    left: 165px;
+}
+.artefact.log{
+    top: 16px;
+    right: 16px;
+}
+.artefact.geranium{
+    bottom: 16px;
+    left: 16px;
+}
+.artefact.polypody{
+    left: 285px;
+    bottom: 16px;
+}
+.artefact.bark{
+    right: 187px;
+    bottom: 16px;
+}
+.artefact.blossom{
+    right: 16px;
+    bottom: 16px;
+}
+.artefact_number{
+    position: absolute;
+}
+.artefact_number.one{
+    top: 142px;
+    left: 16px;
+}
+.artefact_number.two{
+    left: 324px;
+    top: 16px;
+}
+.artefact_number.three{
+    top: 50px;
+    right: 285px;
+}
+.artefact_number.four{
+    bottom: 98px;
+    left: 156px;
+}
+.artefact_number.five{
+    bottom: 16px;
+    left: 394px;
+}
+.artefact_number.six{
+    right: 179px;
+    top: 184px;
+}
+.artefact_number.seven{
+    bottom: 16px;
+    right: 56px;
+}
+.artefacts_desc{
+    background-color: #BAE249;
+    width: 255px;
+    height: 493px;
+    color: #1D2F30;
+    padding: 16px;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+.artefacts_desc h3{
+    font-family: 'Cormorant', serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.artefacts_desc p{
+    font-weight: lighter;
+    width: 223px;
+}
+.read_next{
+    margin-top: 75px;
+    display: flex;
+    place-items: center center;
+    width: 166px;
+}
+.read_next p{
+    font-weight: 700;
+    margin: 0;
+}
