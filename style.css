@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     color: white;
     margin: 0;
@@ -22,6 +25,11 @@ nav {
 }
 .nav > div {
     margin-right: 64px;
+    transition: 0.3s;
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
 }
 .icons{
     display: flex;
@@ -42,7 +50,9 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    margin-bottom: 60px;
+}
+.slider_cards{
+    padding-top: 60px;
 }
 .title{
     font-size: 60px;
@@ -263,6 +273,7 @@ input{
     padding: 11.5px 26px;
     font-weight: 900;
     border: none;
+    cursor: pointer;
 }
 .help p {
     margin: 0;
@@ -299,11 +310,11 @@ footer{
 footer p{
     margin: 0;
 }
-.nav > div:hover{
+.nav a:hover{
     color: #BAE249;
     cursor: pointer;
 }
-.nav > div:active{
+.nav a:active{
     color: #688B05;
 }
 .btn:hover{
@@ -311,7 +322,7 @@ footer p{
     color: #0B1919;
 }
 .btn:focus{
-    border: 1px double #83A440;
+    border: 1px solid #83A440;
 }
 .btn:active{
     background-color: #688B05;
@@ -319,4 +330,22 @@ footer p{
 }
 .btn{
     cursor: pointer;
+    transition: 0.3s;
+}
+.name:hover, .email:hover{
+    background-color: #899D9D;
+    border: 1px solid white;
+}
+.name:hover::placeholder, .email:hover::placeholder{
+    color: #fff;
+}
+.name:active, .email:active{
+    background-color: #899D9D;
+    color: #0B1919;
+}
+.submit:active{
+    background-color: #688B05;
+}
+.submit:hover{
+    background-color: #91AC46;
 }
