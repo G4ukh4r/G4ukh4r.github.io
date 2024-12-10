@@ -299,3 +299,24 @@ footer{
 footer p{
     margin: 0;
 }
+.nav > div:hover{
+    color: #BAE249;
+    cursor: pointer;
+}
+.nav > div:active{
+    color: #688B05;
+}
+.btn:hover{
+    background-color: #BAE249;
+    color: #0B1919;
+}
+.btn:focus{
+    border: 1px double #83A440;
+}
+.btn:active{
+    background-color: #688B05;
+    color: #0B1919;
+}
+.btn{
+    cursor: pointer;
+}
