@@ -16,7 +16,8 @@ nav {
     background-color: #1D2F30;
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
-    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .nav{
     display: flex;
@@ -25,11 +26,11 @@ nav {
 }
 .nav > div {
     margin-right: 64px;
-    transition: 0.3s;
 }
 .nav a{
     text-decoration: none;
     color: #fff;
+    transition: 0.3s;
 }
 .icons{
     display: flex;
@@ -72,9 +73,11 @@ header {
     text-decoration: none;
     font-weight: 700;
     display: flex;
-    align-items: center;
+    place-items: center center;
     gap: 8px;
     transition: 0.3s;
+}
+.research{
     display: inline-block;
 }
 .header_down path{
@@ -264,15 +267,20 @@ header {
     width: 223px;
 }
 .read_next{
-    margin-top: 75px;
-    display: flex;
-    place-items: center center;
-    width: 166px;
+    margin-top: 60px;
+    display: inline-block;
 }
-.read_next p{
+.read_next a{
+    margin-top: 75px;
     font-weight: 700;
     margin: 0;
+    text-decoration: none;
+    color: #0B1919;
+    display: flex;
+    place-items: center center;
+    gap: 8px;
 }
+read
 input{
     display: block;
 }
@@ -423,11 +431,16 @@ input[type='text']:focus{
         width: 256px;
         font-size: 48px;
         font-family: 'Cormorant', serif;
+        margin-top: 30px;
     }
     .container{
         margin: 0 auto;
-        max-width: 80vw;
-        justify-content: center;
+        width: 270px;
+        padding: 0 32px;
+    }
+    .header_down .container{
+        padding-bottom: 30px;
+        padding-left: 0;
     }
     .text{
         display: none;
@@ -437,6 +450,7 @@ input[type='text']:focus{
     }
     .cards{
         grid-template-columns: 1fr;
+        width: 257px;
     }
     .slider{
         display: none;
@@ -448,6 +462,7 @@ input[type='text']:focus{
     .artefacts img{
         display: none;
     }
+
     .new_artefacts{
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -455,5 +470,17 @@ input[type='text']:focus{
     }
     .nav{
         display: none;
+    }
+    .help p {
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    input[type='text']{
+        width: 270px;
+    }
+    .heading{
+        width: 250px;
     }
 }
