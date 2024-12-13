@@ -407,6 +407,7 @@ footer p{
 input[type='text']{
     outline: 0;
     transition: 0.3s;
+    display: block;
 }
 input[type='text']:hover{
     background-color: #899D9D;
