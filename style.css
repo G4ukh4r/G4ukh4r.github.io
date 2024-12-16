@@ -427,6 +427,18 @@ input[type='text']:focus{
     fill: #899D9D;
     transition: 0.3s;
 }
+.read_next a:hover{
+    color: #688B05;
+}
+.read_next a:hover path{
+    fill: #688B05;
+}
+.read_next a:active{
+    color: #899D9D;
+}
+.read_next a:active path{
+    fill: #899D9D;
+}
 @media screen and (max-width: 500px){
     .title{
         width: 256px;
