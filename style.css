@@ -286,7 +286,6 @@ header {
     place-items: center center;
     gap: 8px;
 }
-read
 input{
     display: block;
 }
@@ -445,6 +444,9 @@ input[type='text']:focus{
 .read_next a:active path{
     fill: #899D9D;
 }
+.nav_mobile{
+    display: none;
+}
 @media screen and (max-width: 500px){
     .title{
         width: 256px;
@@ -478,6 +480,7 @@ input[type='text']:focus{
         width: auto;
         background-color: #0B1919;
         overflow: hidden;
+        overflow-x: auto;
     }
     .artefacts_background span{
         color: #899D9D;
@@ -557,5 +560,25 @@ input[type='text']:focus{
         width: 100px;
         margin: 0 auto;
         margin-top: 15px;
+        justify-items: center;
+    }
+    .nav_mobile a{
+        color: inherit;
+        font-weight: 400;
+    }
+    .nav_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        white-space: nowrap;
+        overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+        -webkit-overflow-scrolling: touch;
+        padding-top: 15px;
+    }
+    .nav_mobile > div{
+        margin-right: 32px;
+    }
+    .header-down{
+        overflow: hidden;
     }
 }
