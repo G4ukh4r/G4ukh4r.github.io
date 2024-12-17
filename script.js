@@ -39,3 +39,4 @@ prevBtn.addEventListener('click', () => {
     updateControls();
 });
 document.addEventListener('DOMContentLoaded', updateControls);
+

@@ -61,11 +61,12 @@ header {
     width: 680px;
     font-family: "Cormorant", serif;
     font-weight: bold;
+    margin-bottom: 16px;
 }
 .text{
     width: 635px;
     line-height: 150%;
-    font-size: 19px;
+    font-size: 16px;
     margin-bottom: 24px;
 }
 .header_down a{
@@ -458,7 +459,6 @@ input[type='text']:focus{
     }
     .header_down .container{
         padding-bottom: 30px;
-        padding-left: 0;
     }
     .text{
         display: none;
@@ -469,18 +469,48 @@ input[type='text']:focus{
     .cards{
         grid-template-columns: 1fr;
         width: 257px;
+        margin: 0 auto;
     }
     .slider{
         display: none;
     }
     .artefacts_background{
-        width: 255px;
+        width: auto;
         background-color: #0B1919;
+        overflow: hidden;
+    }
+    .artefacts_background span{
+        color: #899D9D;
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .artefact_number.three{
+        left: 516px;
+    }
+    .artefact_number.six{
+        left: 622px;
+    }
+    .artefact_number.seven{
+        left: 745px;
+    }
+    .artefacts_desc{
+        width: auto;
     }
     .artefacts img{
-        display: none;
     }
-
+    .artefact.bark{
+        left: 481px;
+    }
+    .artefact.blossom{
+        left: 691px;
+    }
+    .artefact.log{
+        left: 386px;
+    }
     .new_artefacts{
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -496,9 +526,36 @@ input[type='text']:focus{
         display: flex;
     }
     input[type='text']{
-        width: 270px;
+        width: 100%;
     }
     .heading{
-        width: 250px;
+        width: auto;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    .icons > div{
+        margin-right: 0;
+    }
+    .icons{
+        gap: 32px;
+    }
+    .pagination > div {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+    .point{
+        background-color: #0B1919;
+    }
+    .point_checked{
+        background-color: #BAE249;
+    }
+    .pagination{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
     }
 }
