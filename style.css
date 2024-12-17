@@ -575,6 +575,12 @@ input[type='text']:focus{
         -webkit-overflow-scrolling: touch;
         padding-top: 15px;
     }
+    .nav_mobile::-webkit-scrollbar {
+        height: 0; 
+    }
+    .artefacts_background::-webkit-scrollbar {
+        height: 0; 
+    }
     .nav_mobile > div{
         margin-right: 32px;
     }
