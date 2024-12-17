@@ -447,6 +447,9 @@ input[type='text']:focus{
 .nav_mobile{
     display: none;
 }
+.new_artefacts span{
+    display: none;
+}
 @media screen and (max-width: 500px){
     .title{
         width: 256px;
