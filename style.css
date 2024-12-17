@@ -459,8 +459,13 @@ input[type='text']:focus{
         width: 270px;
         padding: 0 32px;
     }
-    .header_down .container{
+    .header_down .container {
         padding-bottom: 30px;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 32px;
+        margin-left: 0;
+        width: auto;
     }
     .text{
         display: none;
