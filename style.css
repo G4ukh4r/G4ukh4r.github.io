@@ -23,6 +23,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 .nav > div {
     margin-right: 64px;
@@ -511,8 +512,6 @@ input[type='text']:focus{
     .artefacts_desc{
         width: auto;
     }
-    .artefacts img{
-    }
     .artefact.bark{
         left: 481px;
     }
@@ -596,3 +595,27 @@ input[type='text']:focus{
         overflow: hidden;
     }
 }
+@media screen and (orientation: landscape) and (max-width: 1100px) {
+    .container {
+        width: 800px;
+    };
+    .slider_cards .container{
+        overflow: hidden;
+    }
+    .title{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .text{
+        display: none;
+    }
+    .card_background{
+        padding: 10px 16px;
+    }
+    .card{
+        width: unset;
+    }
+    .card p {
+        display: none;
+    }
+  }
